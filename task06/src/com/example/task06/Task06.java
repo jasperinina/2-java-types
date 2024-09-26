@@ -6,7 +6,22 @@ public class Task06 {
 
         int sum = x + y;
 
-        return String.valueOf(Math.abs(sum)).length();
+        sum = Math.abs(sum);
+
+        int count = 0;
+
+        if (sum == 0) {
+            return 1;
+        }
+
+        while (sum > 0) {
+            count++;
+            sum /= 10;
+        }
+
+        return count;
+
+        // return String.valueOf(Math.abs(sum)).length();
     }
 
 

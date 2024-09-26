@@ -7,9 +7,6 @@ public class Task10 {
         if (Float.isNaN(a) && Float.isNaN(b)) {
             return true;
         }
-        else if (Float.isNaN(a) || Float.isNaN(b)) {
-            return false;
-        }
 
         if (Float.isInfinite(a) && Float.isInfinite(b)) {
             return a == b;
